@@ -1,0 +1,438 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Wrmf3ClSZ_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":5}},{\"id\":\"BZ2R71a1Ob\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\ud83c\udfe0 Property Management \ud83c\udfe0</span>\",\"col\":4}},{\"id\":\"wxQXkv3ll4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":3}},{\"id\":\"o37ZaTumhf\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Your Shortcuts</i></span>\",\"col\":12}},{\"id\":\"ohElR163bC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"ZisZ2CtVja\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Property Owner\",\"col\":3}},{\"id\":\"ZGm9rBeizM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Property Manager\",\"col\":3}},{\"id\":\"tBamCfMUbd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tenant\",\"col\":3}},{\"id\":\"Y2wpBXbBJE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Landlord\",\"col\":3}},{\"id\":\"SvrxWvAQCu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"9RM-rlmW5i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset\",\"col\":3}},{\"id\":\"E2DfWgGhJP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tenancy\",\"col\":3}},{\"id\":\"QuFUWbfNxA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Mc4uvrgVsi\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Reports &amp; Configurations</i></span>\",\"col\":12}},{\"id\":\"VG7YduQtdu\",\"type\":\"card\",\"data\":{\"card_name\":\"Configuration\",\"col\":3}},{\"id\":\"GBx3PU-y4K\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Details\",\"col\":3}},{\"id\":\"c-kUY90Hpm\",\"type\":\"card\",\"data\":{\"card_name\":\"Tenant Details\",\"col\":3}},{\"id\":\"_V6e1HeSyI\",\"type\":\"card\",\"data\":{\"card_name\":\"Landlord Details\",\"col\":3}},{\"id\":\"0bD2JhxA-K\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Owner Details\",\"col\":3}},{\"id\":\"lyYP4HVx7F\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Manager Details\",\"col\":3}},{\"id\":\"qMoEatToLf\",\"type\":\"card\",\"data\":{\"card_name\":\"Schedules\",\"col\":3}},{\"id\":\"-lYpzMUhe_\",\"type\":\"card\",\"data\":{\"card_name\":\"Property Reports\",\"col\":3}},{\"id\":\"aBdVSf3wmL\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Details\",\"col\":4}}]",
+ "creation": "2022-10-17 12:24:38.178644",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Property Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Configuration",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Group",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Utility Type",
+   "link_count": 0,
+   "link_to": "Utility Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Place Type",
+   "link_count": 0,
+   "link_to": "Place Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tenant Details",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tenant",
+   "link_count": 0,
+   "link_to": "Tenant",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tenant Group",
+   "link_count": 0,
+   "link_to": "Tenant Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tenant Tenancy",
+   "link_count": 0,
+   "link_to": "Tenancy",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Landlord Details",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Landlord",
+   "link_count": 0,
+   "link_to": "Landlord",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Landlord Group",
+   "link_count": 0,
+   "link_to": "Landlord Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Landlord Tenancy",
+   "link_count": 0,
+   "link_to": "Tenancy",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Owner Details",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Owner",
+   "link_count": 0,
+   "link_to": "Property Owner",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Owner Group",
+   "link_count": 0,
+   "link_to": "Property Owner Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Manager Details",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Manager",
+   "link_count": 0,
+   "link_to": "Property Manager",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Manager Group",
+   "link_count": 0,
+   "link_to": "Property Manager Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Schedules",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tenant Schedule",
+   "link_count": 0,
+   "link_to": "Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_count": 0,
+   "link_to": "Appointment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Details",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Group",
+   "link_count": 0,
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Territory",
+   "link_count": 0,
+   "link_to": "Territory",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Details",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property",
+   "link_count": 0,
+   "link_to": "Asset",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Category",
+   "link_count": 0,
+   "link_to": "Asset Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Location",
+   "link_count": 0,
+   "link_to": "Location",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Property Reports",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Property Details",
+   "link_count": 0,
+   "link_to": "Property Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Tenancy Details",
+   "link_count": 0,
+   "link_to": "Tenancy Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Schedule-wise Tenancy Details",
+   "link_count": 0,
+   "link_to": "Schedule-wise Tenancy Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Property Utility",
+   "link_count": 0,
+   "link_to": "Property Utility",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Property Insurance",
+   "link_count": 0,
+   "link_to": "Property Insurance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Nearest Places of Property",
+   "link_count": 0,
+   "link_to": "Nearest Places of Property",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-04 14:28:16.129855",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Property Management",
+ "number_cards": [],
+ "owner": "n.patel.serpentcs@gmail.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Customer",
+   "link_to": "Customer",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Property Owner",
+   "link_to": "Property Owner",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Property Manager",
+   "link_to": "Property Manager",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tenant",
+   "link_to": "Tenant",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Landlord",
+   "link_to": "Landlord",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Asset",
+   "link_to": "Asset",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tenancy",
+   "link_to": "Tenancy",
+   "type": "DocType"
+  }
+ ],
+ "title": "Property Management"
+}

@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-13 14:00:06.564227",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "asset",
+  "asset_name",
+  "tenant",
+  "landlord",
+  "column_break_4",
+  "is_tenant_tenancy",
+  "is_landlord_tenancy",
+  "rent_type",
+  "ground_rent",
+  "column_break_8",
+  "advance_deposit",
+  "number_of_deposit_booked",
+  "total_deposit_amount",
+  "invoice",
+  "is_paid",
+  "payment_entry",
+  "column_break_16",
+  "company",
+  "start_date",
+  "end_date",
+  "section_break_4",
+  "tenant_schedule",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TT.-\nLT.-"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Asset",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "asset.asset_name",
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "label": "Asset Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "is_tenant_tenancy",
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tenant",
+   "mandatory_depends_on": "is_tenant_tenancy",
+   "options": "Customer"
+  },
+  {
+   "depends_on": "is_landlord_tenancy",
+   "fieldname": "landlord",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Landlord",
+   "mandatory_depends_on": "is_landlord_tenancy",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_tenant_tenancy",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Tenant Tenancy "
+  },
+  {
+   "default": "0",
+   "fieldname": "is_landlord_tenancy",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Is Landlord Tenancy"
+  },
+  {
+   "fetch_from": "asset.rent_type",
+   "fetch_if_empty": 1,
+   "fieldname": "rent_type",
+   "fieldtype": "Select",
+   "label": "Rent Type",
+   "options": "\nMonthly\nQuarterly\nHalf-yearly\nYearly",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "asset.ground_rent",
+   "fetch_if_empty": 1,
+   "fieldname": "ground_rent",
+   "fieldtype": "Float",
+   "label": "Ground Rent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "asset.opening_accumulated_depreciation",
+   "fetch_if_empty": 1,
+   "fieldname": "advance_deposit",
+   "fieldtype": "Float",
+   "label": "Advance Amount",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.advance_deposit",
+   "fieldname": "invoice",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Is Paid"
+  },
+  {
+   "depends_on": "eval:doc.is_paid",
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "mandatory_depends_on": "eval:doc.is_paid",
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "=> After submitting Tenancy the Invoice and Payment details will be visible and editable.",
+   "fieldname": "tenant_schedule",
+   "fieldtype": "Table",
+   "label": "Tenant / Landlord Schedule",
+   "options": "Tenant Schedule",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tenancy",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "asset.start_date",
+   "fetch_if_empty": 1,
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "asset.end_date",
+   "fetch_if_empty": 1,
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "asset.number_of_depreciations_booked",
+   "fetch_if_empty": 1,
+   "fieldname": "number_of_deposit_booked",
+   "fieldtype": "Int",
+   "label": "Number of Rent Booked",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_deposit_amount",
+   "fieldtype": "Currency",
+   "label": "Total Rent Amount",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-07 10:53:27.962725",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Tenancy",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "asset",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "asset_name",
+ "track_changes": 1
+}

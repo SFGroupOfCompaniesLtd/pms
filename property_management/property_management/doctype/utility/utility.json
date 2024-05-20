@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-25 11:16:16.800668",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "utility_type",
+  "contact",
+  "reference",
+  "issuance_date",
+  "expiry_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "utility_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utility Type",
+   "options": "Utility Type"
+  },
+  {
+   "columns": 2,
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contact",
+   "options": "Contact"
+  },
+  {
+   "columns": 2,
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reference"
+  },
+  {
+   "columns": 1,
+   "fieldname": "issuance_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Issuance / Warranty Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-30 13:40:29.809102",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Utility",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-30 15:59:07.317914",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Solufy",
+ "modified": "2022-09-30 15:59:07.317914",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Nearest Places of Property",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Place Type",
+ "report_name": "Nearest Places of Property",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

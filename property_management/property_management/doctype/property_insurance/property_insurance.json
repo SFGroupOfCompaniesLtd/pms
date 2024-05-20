@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-25 11:30:16.625481",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "policy_number",
+  "start_date",
+  "end_date",
+  "premium",
+  "payment_term",
+  "related_company",
+  "insurance_company",
+  "attach_file"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Policy Number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "premium",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Premium"
+  },
+  {
+   "columns": 1,
+   "fieldname": "payment_term",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payment Term",
+   "options": "Payment Term"
+  },
+  {
+   "columns": 1,
+   "fieldname": "related_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Related Company"
+  },
+  {
+   "columns": 1,
+   "fieldname": "insurance_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insurance Company"
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-25 11:30:16.625481",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Property Insurance",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
