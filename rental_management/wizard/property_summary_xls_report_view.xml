@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="property_summary_xls_report_form_view" model="ir.ui.view">
+            <field name="name">property.xls.report.form.view</field>
+            <field name="model">property.summary.report.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <label for="type" />
+                            <div>
+                                <field name="type" required="1" widget="radio"
+                                    options="{'horizontal':True}" />
+                                <div class="font-italic text-muted" invisible="type">
+                                    This Excel Report will Print Paid Rent invoice or Sold invoice
+                                    Between two Dates.
+                                </div>
+                            </div>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                        </group>
+                        <group>
+                            <field name="end_date" />
+                        </group>
+                        <group>
+                            <field name="property_ids" widget="many2many_tags" class="oe_inline"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Print" type="object" class="btn btn-outline-success"
+                            name="action_property_summary_xls_report" />
+                        <button string="Cancel" special="cancel" class="btn btn-outline-danger" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="property_summary_xls_report_wizard_action" model="ir.actions.act_window">
+            <field name="name">Property Summary Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">property.summary.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

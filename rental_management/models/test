@@ -1,0 +1,139 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/netsvc.py", line 147, in format
+    return DBFormatter.format(self, record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/netsvc.py", line 141, in format
+    return logging.Formatter.format(self, record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2364, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1891, in _serve_db
+    return self._transactioning(
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1954, in _transactioning
+    return service_model.retrying(func, env=self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 137, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1921, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2168, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 330, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 728, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 40, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 517, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+  File "/opt/odoo/custom_addons/customer-gva/rental_management/wizard/booking_wizard.py", line 115, in create_booking_action
+    _logger.info('Malipopay Boolean', malipopay)
+Message: 'Malipopay Boolean'
+Arguments: ('True',)
+2025-03-13 13:27:38,259 22652 INFO GVA odoo.addons.rental_management.wizard.booking_wizard: Malipopay Push Data
+
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/netsvc.py", line 147, in format
+    return DBFormatter.format(self, record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/netsvc.py", line 141, in format
+    return logging.Formatter.format(self, record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2364, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1891, in _serve_db
+    return self._transactioning(
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1954, in _transactioning
+    return service_model.retrying(func, env=self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 137, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1921, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2168, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 330, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 728, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 40, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 517, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+  File "/opt/odoo/custom_addons/customer-gva/rental_management/wizard/booking_wizard.py", line 137, in create_booking_action
+    _logger.info('\n\nGVA ACCESS', gva_access_token)
+Message: '\n\nGVA ACCESS'
+Arguments: ('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZDUzNDgxYWE5N2I5OGE4ODM5MTBmODUxMzYxODQzMjE6ODAyODMwZjFmNjVlM2ZlYjJjYTY5MzBlNjc0ZWFiZjgwYTFiZDQ0ZjAzNzdlZDIzMjVkZDgwNTIyNTcwYTkxYzViMjc2NGY1Y2E3MTUxMjk2N2NlNWY3MzBmZDFlYjFjMjMyZDlkZDk0ZTAwZjNlNWI3ZTZjNjdiMmY2Y2QxMTUzZjViNDJhOGUwZGZkMDU1Zjc1M2U3Y2FhNGJiOTg1ZWJiZjU4NWY1YjI5Mzc1MTNiMjQwOGJkMGMzYjI0OWU2NDI4ODQ0OTIzNmJhMmVmYzk3MTVmMTg2ZDI0Y2JlMjIwM2JjOGRkODFhYzcwZWI0ODc4ODJkMmFlODE0ZmI4ODJhNTA5NWNhZGFiNjRhOTExZWExNjk2OWUwY2M0Yzc4OGU0NGFhNmE0MDA0MmVlYWYyMzc4NGQxMWQzMWFmZTU4YzM4ZGI4MTVkMzI3ZmI1NGQ4MDNhNTZjYTNjYzdhNTFlMzlmM2Q1MzNiMGU3ODhkMTE1OTlmYzhiODQyM2NhYjdkNjgwZGYzYWE0ZTRjZDBiYmZmMjJlNGE1ZDA4ZWMiLCJpYXQiOjE3MzkyNjAyNDUsImF1ZCI6IkdWQS1NSUNST1NFUlZJQ0VTIiwiaXNzIjoiQVVUSC1HVkEtU0VSVklDRSIsInN1YiI6IkF1dGgifQ.fyeTvOyO2HCVLIMDxL_kogW8mmtG_kYam2fV7GtMdyA',)
